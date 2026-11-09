@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李鴻奇的作品集 | Photography</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f9f8f6;
+            color: #333333;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .main-content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 50px 24px 80px;
+        }
+
+        .btn-more {
+            display: inline-block;
+            background-color: #333333;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 28px;
+            font-size: 0.92rem;
+            letter-spacing: 0.06em;
+            transition: background-color 0.2s;
+        }
+
+        .btn-more:hover {
+            background-color: #000000;
+        }
+
+        .intro-section h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #2b2b2b;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+        }
+
+        .intro-section h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #2b2b2b;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            font-style: italic;
+            color: #888888;
+        }
+
+        .thin-divider {
+            border: 0;
+            height: 1px;
+            background-color: #e2e0dc;
+            max-width: 480px;
+            margin: 45px auto;
+        }
+
+        /* 三欄拍立得白邊框照片牆 */
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-bottom: 42px;
+        }
+
+        .photo-frame {
+            background-color: #ffffff;
+            padding: 6px;
+            border: 1px solid #e0ded9;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            transition: transform 0.25s ease;
+        }
+
+        .photo-frame:hover {
+            transform: translateY(-4px);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+            cursor: zoom-in;
+        }
+
+        /* 全螢幕黑底燈箱放大效果 */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.88);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            cursor: zoom-out;
+            padding: 30px;
+        }
+
+        .lightbox img {
+            max-width: 92%;
+            max-height: 92vh;
+            object-fit: contain;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            border: 4px solid #ffffff;
+        }
+
+        .gallery-footer {
+            margin-top: 60px;
+            padding-top: 35px;
+            border-top: 1px solid #e2e0dc;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+    <main class="main-content">
+        <!-- 返回第一頁的導覽 -->
+        <div style="text-align: left; margin-bottom: 30px;">
+            <a href="index.html" class="btn-more">← 回到個人名片</a>
+        </div>
+
+        <section class="intro-section">
+            <h1>我的攝影作品集</h1>
+            <p class="subtitle">Sony A6700 </p>
+            <hr class="thin-divider">
+        </section>
+
+        <!-- 第一組 6 張照片牆（把檔名換成你放進 images 資料夾的照片） -->
+        <section class="album-grid">
+            <div class="photo-frame"><img src="week1/images/IMG_3494.JPG" alt="作品 1"></div>
+            <div class="photo-frame"><img src="week1/images/IMG_3718.JPG" alt="作品 2"></div>
+            <div class="photo-frame"><img src="week1/images/DSC03903.JPG" alt="作品 3"></div>
+            <div class="photo-frame"><img src="week1/images/DSC01499.JPG" alt="作品 4"></div>
+            <div class="photo-frame"><img src="week1/images/DSC01491.JPG" alt="作品 5"></div>
+            <div class="photo-frame"><img src="week1/images/DSC01500-2.jpg" alt="作品 6"></div>
+        </section>
+
+        <!-- 分隔線 -->
+        <hr class="thin-divider">
+
+        <!-- 第二組自訂標題區（這裡自己改標題與副標題） -->
+        <section class="intro-section" style="margin-bottom: 35px;">
+            <h2>Fm2 film</h2>
+            <p class="subtitle">這裡打副標題</p>
+        </section>
+
+        <!-- 第二組 6 張照片牆 -->
+        <section class="album-grid">
+            <div class="photo-frame"><img src="week1/images/IMG_3325.JPG" alt="作品 7"></div>
+            <div class="photo-frame"><img src="week1/images/IMG_3330.JPG" alt="作品 8"></div>
+            <div class="photo-frame"><img src="week1/images/IMG_3315.JPG" alt="作品 9"></div>
+            <div class="photo-frame"><img src="week1/images/IMG_3310.JPG" alt="作品 10"></div>
+            <div class="photo-frame"><img src="week1/images/IMG_3290.JPG" alt="作品 11"></div>
+            <div class="photo-frame"><img src="week1/images/IMG_3303.JPG" alt="作品 12"></div>
+        </section>
+
+        <footer class="gallery-footer">
+            <p class="copyright">© 2026 李鴻奇 • Photography Portfolio</p>
+        </footer>
+    </main>
+
+    <!-- 隱藏的燈箱放大容器 -->
+    <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+        <img id="lightbox-img" src="" alt="放大預覽">
+    </div>
+
+    <!-- 點擊照片放大的互動程式 -->
+    <script>
+        document.querySelectorAll('.photo-frame img').forEach(img => {
+            img.addEventListener('click', () => {
+                document.getElementById('lightbox-img').src = img.src;
+                document.getElementById('lightbox').style.display = 'flex';
+            });
+        });
+    </script>
+</body>
+</html>
