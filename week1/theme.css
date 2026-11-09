@@ -72,23 +72,45 @@ body.theme-notebook {
 .theme-notebook a { color: #2f6db3; }
 .theme-notebook img { border: 6px solid #fff; box-shadow: 0 6px 16px rgba(70, 50, 20, .25); transform: rotate(3deg); border-radius: 12px; }
 
-/* ---------- 主題 3：極簡雜誌 ---------- */
-html:has(> body.theme-minimal) {
-  background: #f3f3f1;
+
+html,
+html:has(body.theme-neon) {
+  background: radial-gradient(circle at center, #262626 0%, #0d0d0d 100%) !important;
 }
-body.theme-minimal {
-  font-family: "Noto Serif TC", serif;
-  color: #1d1d1f;
-  background: #fff;
-  text-align: left;
-  border-top: 8px solid #1d1d1f;
+
+body.theme-neon {
+  background: #1c1c1c !important;
+  color: #f5f5f5 !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7) !important;
 }
-.theme-minimal img { margin: 0 0 22px; border-radius: 0; filter: grayscale(1) contrast(1.1); }
-.theme-minimal h1 { font-size: 3rem; font-weight: 900; letter-spacing: -.02em; }
-.theme-minimal h2 {
-  font-family: "Noto Sans TC", sans-serif; font-size: .8rem; letter-spacing: .3em; color: #8a8a8a;
-  border-bottom: 1px solid #ddd; padding-bottom: 6px;
+
+body.theme-neon h1,
+body.theme-neon h2 {
+  color: #ffffff !important;
+  text-shadow: none !important;
 }
-.theme-minimal hr { background: #1d1d1f; width: 40px; margin-left: 0; }
-.theme-minimal a { color: #1d1d1f; }
-.theme-minimal em { background: #ffef9a; font-style: normal; padding: 0 4px; }
+
+body.theme-neon strong {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.45) !important;
+}
+
+body.theme-neon img {
+  border: 3px solid #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.theme-neon hr {
+  border: 0 !important;
+  height: 1px !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: none !important;
+}
+
+body.theme-neon a {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
